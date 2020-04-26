@@ -1,0 +1,86 @@
+/* the styles for the elements */
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 100%;
+	margin: 0 auto;
+    color: white;
+}
+html {
+    background-color: white;
+    background: fixed;
+    background-image: url('https://rocketleague.media.zestyio.com/rl_keyart_3rd-bday_hori_no-logos_1920.309bf22bd29c2e411e9dd8eb07575bb1.jpg');
+}
+
+/******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+
+                        Header stuff and things
+
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************/
+
+header{
+    border: 1px solid #1F1C49 ;
+    background-color: #1F1C49;
+
+}
+
+header img{
+    float: left;
+}
+
+#nav_menu {
+	clear: left;
+	border-bottom: 2px solid steelblue;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li {
+    float: left;
+    width: 15%;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: steelblue;
+	font-weight: bold;
+	color: white;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul li a.current {
+	color: white;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightsteelblue;
+}
